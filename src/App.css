@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Header {
+  width: 100%;
+  background-color: #773344;
+  color: white;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header h1 {
+  margin: 0 0 5px 0;
+  font-size: 50px;
+}
+
+.Header h4 {
+  margin: 5px 0 0 0;
+}
+
+.Body {
+  background-color: #e3b5a4;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.Coffees {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Coffee {
+  width: 24%;
+  margin: 10px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+  border-radius: 5px;
+}
+
+.Coffee .imgDiv {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.Coffee .imgDiv:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  opacity: 0.9;
+}
+
+.Coffee img {
+  width: 100%;
+  height: auto;
+}
+
+.Coffee h3 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.CoffeeInfo {
+  padding: 20px 10px 20px 10px;
+  background-color: #f5e9e2;
+  border-radius: 0 0 5px 5px;
+}
+
+.BrewButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.BrewQuantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.BrewQuantity p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.BrewAmount {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #d44d5c;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.BrewButtons button {
+  width: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #d44d5c;
+  color: white;
+  border-color: #d44d5c;
+}
+
+/* NEW COFFEE FORM */
+
+.NewCoffeeForm {
+  width: 40%;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5e9e2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+}
+
+.NewCoffeeForm input {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 80%;
+  margin: 5px 0;
+  background-color: #e3b5a4;
+}
+
+.NewCoffeeForm button {
+  width: 83.4%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 5px;
+  background-color: #d44d5c;
+  color: white;
+}
+
+.NewCoffeeForm h2 {
+  margin: 0 0 10px 0;
+}
+
+/* FOOTER STYLES */
+
+.Footer {
+  width: 100%;
+  padding: 6px 6px 6px 20px;
+  background-color: #773344;
+  font-size: 18px;
+  color: white;
+}
