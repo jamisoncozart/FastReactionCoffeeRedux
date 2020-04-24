@@ -1,12 +1,12 @@
-# _Profile Creator_
+# _Fast Reaction Coffee_
 
-#### _18 April 2020 | Jamison Cozart_
+#### _24 April 2020 | Jamison Cozart_
 
 ## Description
 
 _React application for the store manager of Fast Reaction Coffee, Taproom hosting local coffee brews from all over Oregon._
 
-_View the live site at:_ 
+_View the live site at:_ https://jamisoncozart.github.io/FastReactionCoffee/
 
 ![UI Design](https://i.imgur.com/cza07rG.png)
 
