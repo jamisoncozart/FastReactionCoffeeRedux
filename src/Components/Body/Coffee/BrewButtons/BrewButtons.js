@@ -4,9 +4,9 @@ const BrewButtons = props => {
   return (
     <div className="BrewButtons">
       <button>Refill</button>
-      <p className="BrewAmount">10</p>
+      <p className="BrewAmount">{props.quantity}</p>
       <p className="cups">Cups</p>
-      <button>Refill</button>
+      <button>Tap</button>
     </div>
   )
 }
