@@ -218,3 +218,26 @@ button:hover {
 button:focus {
   outline: 0;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 900px) {
+  .Coffee {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Coffee {
+    width: 90%;
+  }
+  .NewCoffeeForm {
+    width: 80%;
+  }
+  .Header h1 {
+    font-size: 25px;
+  }
+  .Header h4 {
+    font-size: 14px;
+  }
+}
