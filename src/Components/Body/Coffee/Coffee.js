@@ -3,9 +3,10 @@ import BrewButtons from './BrewButtons/BrewButtons';
 
 const Coffee = props => {
   return (
-    <div className="Coffee">
-      <h3>Almond Dark Blend</h3>
-      <BrewButtons />
+    <div onClick={() => props.handleShowCoffeeDetails(props.id)} className="Coffee">
+      <img src={props.image} />
+      <h3>{props.name}</h3>
+      <BrewButtons quantity={props.quantity} />
     </div>
   )
 }
