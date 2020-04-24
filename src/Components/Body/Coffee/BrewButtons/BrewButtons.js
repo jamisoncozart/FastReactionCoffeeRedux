@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 const BrewButtons = props => {
 
@@ -16,6 +17,13 @@ const BrewButtons = props => {
       <button onClick={() => props.handleDecrementingCoffeeQuantity(props.id)}>Tap</button>
     </div>
   )
+}
+
+BrewButtons.propTypes = {
+  handleRefillingCoffeeQuantity: PropTypes.func,
+  quantity: PropTypes.number,
+  handleDecrementingCoffeeQuantity: PropTypes.func,
+  id: PropTypes.string
 }
 
 export default BrewButtons;

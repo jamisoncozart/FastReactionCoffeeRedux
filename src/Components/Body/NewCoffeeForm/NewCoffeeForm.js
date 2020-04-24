@@ -1,5 +1,6 @@
 import React from 'react';
 import { v4 } from 'uuid';
+import PropTypes from "prop-types";
 
 const NewCoffeeForm = props => {
 
@@ -23,6 +24,10 @@ const NewCoffeeForm = props => {
       <button>Add Brew</button>
     </form>
   )
+}
+
+NewCoffeeForm.propTypes = {
+  onNewBrewCreation: PropTypes.func
 }
 
 export default NewCoffeeForm;

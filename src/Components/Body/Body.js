@@ -112,7 +112,6 @@ class Body extends React.Component {
         var textB = b.name.toUpperCase();
         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
       });
-
       return (
         <React.Fragment>
           <div className="Coffees">

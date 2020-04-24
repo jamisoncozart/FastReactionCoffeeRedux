@@ -4,7 +4,7 @@ import Body from './Body/Body';
 import Footer from './Footer/Footer';
 import '../App.css';
 
-const App = props => {
+const App = () => {
   return (
     <React.Fragment>
       <Header />
