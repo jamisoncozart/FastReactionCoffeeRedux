@@ -2,13 +2,13 @@
 
 #### _18 April 2020 | Jamison Cozart_
 
-![UI Design](https://i.imgur.com/allaZIv.png)
-
 ## Description
 
 _React application for the store manager of Fast Reaction Coffee, Taproom hosting local coffee brews from all over Oregon._
 
 _View the live site at:_ 
+
+![UI Design](https://i.imgur.com/allaZIv.png)
 
 ## Setup/Installation Requirements
 
