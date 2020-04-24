@@ -27,6 +27,7 @@ body {
   background-color: #e3b5a4;
   padding-top: 20px;
   padding-bottom: 40px;
+  min-height: 45vw;
 }
 
 .Coffees {
@@ -144,14 +145,52 @@ body {
   font-size: 20px;
   font-weight: bold;
   border-radius: 5px;
-  border: 1px solid black;
   margin: 5px;
   background-color: #d44d5c;
+  border-color: #d44d5c;
   color: white;
 }
 
 .NewCoffeeForm h2 {
   margin: 0 0 10px 0;
+}
+
+/* BREW DETAILS STYLES */
+
+.BrewDetails {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DetailsImageDiv {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.DetailsImageDiv img {
+  width: auto;
+  height: 400px;
+  margin: auto;
+}
+
+.BrewDetails h2 {
+  margin-bottom: 0;
+}
+
+.BrewDetails button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #d44d5c;
+  border-color: #d44d5c;
+  cursor: pointer;
 }
 
 /* FOOTER STYLES */
@@ -162,4 +201,20 @@ body {
   background-color: #773344;
   font-size: 18px;
   color: white;
+}
+
+button {
+  position: relative;
+  box-shadow: 0 3px #773344;
+  top: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  top: 2px;
+  box-shadow: 0 1px #773344;
+}
+
+button:focus {
+  outline: 0;
 }

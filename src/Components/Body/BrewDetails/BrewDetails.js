@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 const BrewDetails = props => {
   return (
     <div className="BrewDetails">
-      <img src={props.image} alt="Coffee Profile" />
+      <div className="DetailsImageDiv">
+        <img src={props.image} alt="Coffee Profile" />
+      </div>
       <h2>{props.name}</h2>
       <p className="BrewDescription">{props.description}</p>
       <button onClick={props.handleBackToMainPage}>Back to Brews</button>

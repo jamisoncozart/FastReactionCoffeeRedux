@@ -7,6 +7,15 @@ const BrewButtons = props => {
     return props.handleRefillingCoffeeQuantity(props.id);
   }
 
+  function hideTapIfSoldOut() {
+    console.log(props.quantity);
+    if(props.quantity <= 0) {
+      return;
+    } else {
+      return <button onClick={() => props.handleDecrementingCoffeeQuantity(props.id)}>Tap</button>
+    }
+  }
+
   return (
     <div className="BrewButtons">
       <button onClick={handleClickPropogation}>Refill</button>
@@ -14,7 +23,7 @@ const BrewButtons = props => {
         <p className="BrewAmount">{props.quantity}</p>
         <p className="cups">Cups</p>
       </div>
-      <button onClick={() => props.handleDecrementingCoffeeQuantity(props.id)}>Tap</button>
+      {hideTapIfSoldOut()}
     </div>
   )
 }

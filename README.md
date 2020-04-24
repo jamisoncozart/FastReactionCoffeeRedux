@@ -8,7 +8,7 @@ _React application for the store manager of Fast Reaction Coffee, Taproom hostin
 
 _View the live site at:_ 
 
-![UI Design](https://i.imgur.com/allaZIv.png)
+![UI Design](https://i.imgur.com/cza07rG.png)
 
 ## Setup/Installation Requirements
 
