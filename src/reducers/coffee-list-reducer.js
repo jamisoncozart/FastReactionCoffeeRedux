@@ -7,7 +7,8 @@ const coffeeListReducer = (state = {}, action) => {
         [id]: {
           name: name,
           description: description,
-          image: image
+          image: image,
+          quantity: 20
         }
       }
       return newState;
