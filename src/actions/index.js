@@ -13,3 +13,7 @@ export const changeCurrentCoffee = newCoffee => {
     ...newCoffee
   }
 }
+
+export const toggleDetails = () => {
+  
+}

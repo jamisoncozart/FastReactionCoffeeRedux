@@ -25,6 +25,11 @@ describe('coffee list actions', () => {
       name: newCoffee.name,
       description: newCoffee.description,
       image: newCoffee.image
-    })
+    });
+  });
+  test('if toggleDetails will create a TOGGLE_DETAILS action', () => {
+    expect(a.toggleDetails()).toEqual({
+      type: 'TOGGLE_DETAILS'
+    });
   });
 });
