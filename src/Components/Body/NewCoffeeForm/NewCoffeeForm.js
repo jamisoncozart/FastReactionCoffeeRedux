@@ -18,8 +18,8 @@ const NewCoffeeForm = props => {
   return (
     <form onSubmit={handleNewBrewSubmit} className="NewCoffeeForm">
       <h2>Add New Brew</h2>
-      <input placeholder="Brew Name" name="Name" />
-      <input placeholder="Description" name="Description" />
+      <input placeholder="Brew Name" name="Name" required/>
+      <input placeholder="Description" name="Description" required/>
       <input placeholder="Image URL" name="Image" />
       <button>Add Brew</button>
     </form>

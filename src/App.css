@@ -43,6 +43,7 @@ body {
   margin: 10px;
   box-shadow: 0 4px 4px rgba(0,0,0,0.6);
   border-radius: 5px;
+  height: 100%;
 }
 
 .Coffee .imgDiv {
@@ -220,14 +221,13 @@ button:focus {
 }
 
 /* MEDIA QUERIES */
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .Coffee {
     width: 40%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 870px) {
   .Coffee {
     width: 90%;
   }
