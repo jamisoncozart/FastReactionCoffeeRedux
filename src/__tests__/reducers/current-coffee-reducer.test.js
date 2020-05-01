@@ -4,7 +4,7 @@ describe('currentCoffeeReducer', () => {
   test('if default state is returned when no action is given', () => {
     expect(currentCoffeeReducer(undefined, { type: null })).toEqual({});
   });
-  test('if currentCoffee is successfully updated with a coffee', () => {
+  test('if currentCoffee is successfully changed', () => {
     const action = {
       type: 'CHANGE_CURRENT_COFFEE',
       name: "Caramel Vanilla frappuccino",
