@@ -1,12 +1,12 @@
-# _Fast Reaction Coffee_
+# _Fast Reaction Coffee with Redux_
 
-#### _24 April 2020 | Jamison Cozart_
+#### _1 May 2020 | Jamison Cozart_
 
 ## Description
 
-_React application for the store manager of Fast Reaction Coffee, Taproom hosting local coffee brews from all over Oregon._
+_React + Redux application for the store manager of Fast Reaction Coffee, Taproom hosting local coffee brews from all over Oregon._
 
-_View the live site at:_ https://jamisoncozart.github.io/FastReactionCoffee/
+_View the live site at:_ https://jamisoncozart.github.io/FastReactionCoffeeRedux/
 
 ![UI Design](https://i.imgur.com/cza07rG.png)
 
@@ -14,18 +14,24 @@ _View the live site at:_ https://jamisoncozart.github.io/FastReactionCoffee/
 
 #### Node install
 
-###### For macOS:
+##### For macOS:
 _If Homebrew is not installed on your computer already, then install Homebrew by entering the following two commands in Terminal:_
-* $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-* $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+```
 
 _Install Git with the following command:_
-* $ brew install git
+```
+brew install git
+```
 
 _Next, install Node.js by entering the following command in Terminal:_
-* $ brew install node
+```
+brew install node
+```
 
-###### For Windows:
+##### For Windows:
 _Please visit the [Node.js website](https://nodejs.org/en/download/) for installation instructions._
 
 #### Install this application
@@ -33,8 +39,8 @@ _Please visit the [Node.js website](https://nodejs.org/en/download/) for install
 _Clone this repository via Terminal using the following commands:_
 ```
 cd desktop
-git clone https://github.com/jamisoncozart/FastReactionCoffee
-cd FastReactionCoffee
+git clone https://github.com/jamisoncozart/FastReactionCoffeeRedux
+cd FastReactionCoffeeRedux
 ```
 
 _Next, install npm at the project's root directory, and start the server:_
@@ -63,6 +69,8 @@ _Application Component tree depicting the Component heirarchy for state manageme
 ## Technologies Used
 
 * _React_
+* _Redux_
+* _Node.js_
 * _WebPack_
 * _Git_
 * _CSS_
