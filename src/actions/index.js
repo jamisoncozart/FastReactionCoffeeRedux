@@ -15,5 +15,7 @@ export const changeCurrentCoffee = newCoffee => {
 }
 
 export const toggleDetails = () => {
-  
+  return {
+    type: c.TOGGLE_DETAILS
+  }
 }

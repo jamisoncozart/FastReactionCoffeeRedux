@@ -5,6 +5,7 @@ const coffeeListReducer = (state = {}, action) => {
       const newState = {
         ...state,
         [id]: {
+          id: id,
           name: name,
           description: description,
           image: image,
