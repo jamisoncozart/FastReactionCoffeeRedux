@@ -3,10 +3,6 @@ import PropTypes from "prop-types";
 
 const BrewButtons = props => {
 
-  function handleClickPropogation(event) {
-    return props.handleRefillingCoffeeQuantity(props.id);
-  }
-
   function hideTapIfSoldOut() {
     console.log(props.quantity);
     if(props.quantity <= 0) {
@@ -18,7 +14,7 @@ const BrewButtons = props => {
 
   return (
     <div className="BrewButtons">
-      <button onClick={handleClickPropogation}>Refill</button>
+      <button onClick={() => props.handleRefillingCoffeeQuantity(props.id)}>Refill</button>
       <div className="BrewQuantity">
         <p className="BrewAmount">{props.quantity}</p>
         <p className="cups">Cups</p>

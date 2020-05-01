@@ -21,14 +21,14 @@ let Body = props => {
     dispatch(a.addCoffee(newBrew));
   }
 
-  // const handleDecrementingCoffeeQuantity = (id) => {
-  //   const coffeeToDecrement = this.state.Coffees.filter(coffee => coffee.id === id)[0];
-  //   const updatedCoffee = {...coffeeToDecrement, quantity: coffeeToDecrement.quantity-1};
-  //   const coffeeList = this.state.Coffees.filter(coffee => coffee.id !== id);
-  //   this.setState({
-  //     Coffees: [...coffeeList, updatedCoffee]
-  //   })
-  // }
+  const handleDecrementingCoffeeQuantity = (id) => {
+    console.log(props.masterCoffeeList);
+    const coffeeToDecrement = props.masterCoffeeList[id];
+    console.log(coffeeToDecrement);
+    const updatedCoffee = {...coffeeToDecrement, quantity: coffeeToDecrement.quantity-1};
+    console.log(updatedCoffee, 'updated coffee');
+    dispatch(a.addCoffee(updatedCoffee));
+  }
 
   // const handleRefillingCoffeeQuantity = (id) => {
   //   const coffeeToDecrement = this.state.Coffees.filter(coffee => coffee.id === id)[0];
@@ -66,7 +66,7 @@ let Body = props => {
                 image={coffee.image}
                 quantity={coffee.quantity}
                 handleShowCoffeeDetails={handleShowCoffeeDetails}
-                // handleDecrementingCoffeeQuantity={handleDecrementingCoffeeQuantity}
+                handleDecrementingCoffeeQuantity={handleDecrementingCoffeeQuantity}
                 // handleRefillingCoffeeQuantity={handleRefillingCoffeeQuantity}
                 key={index} />
             ))}

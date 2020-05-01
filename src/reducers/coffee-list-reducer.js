@@ -1,7 +1,7 @@
 const coffeeListReducer = (state = {}, action) => {
   switch(action.type) {
     case 'ADD_COFFEE':
-      const { id, name, description, image } = action;
+      const { id, name, description, image, quantity } = action;
       const newState = {
         ...state,
         [id]: {
@@ -9,7 +9,7 @@ const coffeeListReducer = (state = {}, action) => {
           name: name,
           description: description,
           image: image,
-          quantity: 20
+          quantity: quantity
         }
       }
       return newState;
