@@ -1,5 +1,10 @@
 const showDetailsReducer = (state = false, action) => {
-  return state;
+  switch(action.type) {
+    case 'TOGGLE_DETAILS':
+      return !state;
+    default:
+      return state;
+  }
 }
 
 export default showDetailsReducer;
