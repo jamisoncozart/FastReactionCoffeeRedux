@@ -6,7 +6,7 @@ import { combineReducers } from 'redux';
 const rootReducer = combineReducers({
   masterCoffeeList: coffeeListReducer,
   showDetailsPage: showDetailsReducer,
-  currentBrew: currentCoffeeReducer
+  currentCoffee: currentCoffeeReducer
 });
 
 export default rootReducer;
