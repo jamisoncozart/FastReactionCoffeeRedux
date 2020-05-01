@@ -8,5 +8,8 @@ export const addCoffee = newCoffee => {
 }
 
 export const changeCurrentCoffee = newCoffee => {
-  
+  return {
+    type: c.CHANGE_CURRENT_COFFEE,
+    ...newCoffee
+  }
 }
