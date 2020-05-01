@@ -22,22 +22,16 @@ let Body = props => {
   }
 
   const handleDecrementingCoffeeQuantity = (id) => {
-    console.log(props.masterCoffeeList);
     const coffeeToDecrement = props.masterCoffeeList[id];
-    console.log(coffeeToDecrement);
     const updatedCoffee = {...coffeeToDecrement, quantity: coffeeToDecrement.quantity-1};
-    console.log(updatedCoffee, 'updated coffee');
     dispatch(a.addCoffee(updatedCoffee));
   }
 
-  // const handleRefillingCoffeeQuantity = (id) => {
-  //   const coffeeToDecrement = this.state.Coffees.filter(coffee => coffee.id === id)[0];
-  //   const updatedCoffee = {...coffeeToDecrement, quantity: 20};
-  //   const coffeeList = this.state.Coffees.filter(coffee => coffee.id !== id);
-  //   this.setState({
-  //     Coffees: [...coffeeList, updatedCoffee]
-  //   })
-  // }
+  const handleRefillingCoffeeQuantity = (id) => {
+    const coffeeToDecrement = props.masterCoffeeList[id];
+    const updatedCoffee = {...coffeeToDecrement, quantity: 20};
+    dispatch(a.addCoffee(updatedCoffee));
+  }
 
   function renderBody() {
     if(props.showDetailsPage) {
@@ -67,7 +61,7 @@ let Body = props => {
                 quantity={coffee.quantity}
                 handleShowCoffeeDetails={handleShowCoffeeDetails}
                 handleDecrementingCoffeeQuantity={handleDecrementingCoffeeQuantity}
-                // handleRefillingCoffeeQuantity={handleRefillingCoffeeQuantity}
+                handleRefillingCoffeeQuantity={handleRefillingCoffeeQuantity}
                 key={index} />
             ))}
           </div>

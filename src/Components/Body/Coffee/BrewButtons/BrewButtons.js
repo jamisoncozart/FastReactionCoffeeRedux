@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 const BrewButtons = props => {
 
   function hideTapIfSoldOut() {
-    console.log(props.quantity);
     if(props.quantity <= 0) {
       return;
     } else {
