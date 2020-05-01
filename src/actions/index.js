@@ -6,3 +6,7 @@ export const addCoffee = newCoffee => {
     ...newCoffee
   }
 }
+
+export const changeCurrentCoffee = newCoffee => {
+  
+}
