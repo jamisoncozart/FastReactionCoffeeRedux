@@ -33,4 +33,22 @@ describe('rootReducer', () => {
     store.dispatch(action);
     expect(store.getState().masterCoffeeList).toEqual(coffeeListReducer(undefined, action));
   });
+  test('if value of currentCoffeeReducer is the same as rootReducer', () => {
+    const action = {
+      type: 'CHANGE_CURRENT_COFFEE',
+      name: 'good joe',
+      description: 'just a good cup of joe',
+      image: 'no joe here',
+      quantity: 20
+    }
+    store.dispatch(action);
+    expect(store.getState().currentCoffee).toEqual(currentCoffeeReducer(undefined, action));
+  });
+  test('if value of showDetailsReducer is the same as rootReducer', () => {
+    const action = {
+      type: 'TOGGLE_DETAILS'
+    }
+    store.dispatch(action);
+    expect(store.getState().showDetailsPage).toEqual(showDetailsReducer(undefined, action));
+  });
 });

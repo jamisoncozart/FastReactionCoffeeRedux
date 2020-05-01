@@ -2,6 +2,7 @@ import React from 'react';
 import Coffee from './Coffee/Coffee';
 import NewCoffeeForm from './NewCoffeeForm/NewCoffeeForm';
 import BrewDetails from './BrewDetails/BrewDetails';
+import { connect } from 'react-redux';
 
 class Body extends React.Component {
 
@@ -141,5 +142,15 @@ class Body extends React.Component {
     )
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    masterCoffeeList: state.masterCoffeeList,
+    showDetailsPage: state.showDetailsPage,
+    currentCoffee: state.currentCoffee
+  }
+}
+
+Body = connect(mapStateToProps)(Body);
 
 export default Body;
