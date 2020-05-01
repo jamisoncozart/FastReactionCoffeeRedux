@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FastReactionCoffeeRedux/static/css/main.f15c48a6.chunk.css",
+    "main.js": "/FastReactionCoffeeRedux/static/js/main.d2fae11a.chunk.js",
+    "main.js.map": "/FastReactionCoffeeRedux/static/js/main.d2fae11a.chunk.js.map",
+    "runtime-main.js": "/FastReactionCoffeeRedux/static/js/runtime-main.f11687b0.js",
+    "runtime-main.js.map": "/FastReactionCoffeeRedux/static/js/runtime-main.f11687b0.js.map",
+    "static/js/2.eb383583.chunk.js": "/FastReactionCoffeeRedux/static/js/2.eb383583.chunk.js",
+    "static/js/2.eb383583.chunk.js.map": "/FastReactionCoffeeRedux/static/js/2.eb383583.chunk.js.map",
+    "index.html": "/FastReactionCoffeeRedux/index.html",
+    "precache-manifest.ea6ef5c64b688671ec07539861fa60d2.js": "/FastReactionCoffeeRedux/precache-manifest.ea6ef5c64b688671ec07539861fa60d2.js",
+    "service-worker.js": "/FastReactionCoffeeRedux/service-worker.js",
+    "static/css/main.f15c48a6.chunk.css.map": "/FastReactionCoffeeRedux/static/css/main.f15c48a6.chunk.css.map",
+    "static/js/2.eb383583.chunk.js.LICENSE.txt": "/FastReactionCoffeeRedux/static/js/2.eb383583.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f11687b0.js",
+    "static/js/2.eb383583.chunk.js",
+    "static/css/main.f15c48a6.chunk.css",
+    "static/js/main.d2fae11a.chunk.js"
+  ]
+}
