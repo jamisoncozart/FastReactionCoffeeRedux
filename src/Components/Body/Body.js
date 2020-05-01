@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Coffee from './Coffee/Coffee';
 import NewCoffeeForm from './NewCoffeeForm/NewCoffeeForm';
 import BrewDetails from './BrewDetails/BrewDetails';
+import defaultCoffees from '../../data/defaultCoffees';
 import { connect } from 'react-redux';
 import * as a from '../../actions/index';
 
 let Body = props => {
   const { dispatch } = props;
+  useEffect(() => {
+    const defaultCoffeeList = Object.values(defaultCoffees);
+    defaultCoffeeList.forEach(coffee => {
+      dispatch(a.addCoffee(coffee));
+    });
+  }, []);
   const handleShowCoffeeDetails = (id) => {
     let currentBrew = props.masterCoffeeList[id];
     dispatch(a.changeCurrentCoffee(currentBrew));
