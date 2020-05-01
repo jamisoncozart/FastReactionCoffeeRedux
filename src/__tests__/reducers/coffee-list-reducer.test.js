@@ -26,16 +26,18 @@ describe('coffeeListReducer', () => {
       '1': {
         name: 'Noggaccino',
         description: 'Smooth eggnog with hints of nutmeg and cinammon',
-        image: 'https://www.laweekly.com/wp-content/uploads/2019/05/xmascoffee_menottis.jpg'
+        image: 'https://www.laweekly.com/wp-content/uploads/2019/05/xmascoffee_menottis.jpg',
+        quantity: 20
       },
       '2': {
         name: "Chai Cinnamon Latte",
         description: "Creamy blend of Chai with suttle hints of cinnamon churned to perfection.",
-        image: "https://www.ohhowcivilized.com/wp-content/uploads/2013/01/0918-cha-tea-latte-16.jpg"
+        image: "https://www.ohhowcivilized.com/wp-content/uploads/2013/01/0918-cha-tea-latte-16.jpg",
+        quantity: 20
       }
     }
     const action = {
-      type: 'EDIT_COFFEE',
+      type: 'ADD_COFFEE',
       id: '2',
       name: "Columbian Black",
       description: "Earthy and hearty with a crispt taste of raw coffee.",
